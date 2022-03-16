@@ -1,0 +1,51 @@
+.navbar {
+  height: 44px;
+  background-color: #9e2a98c7;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.icon-white {
+  color: #e7e7e7;
+  font-size: 20px !important;
+}
+
+.icon-white:hover,
+.adminButton:hover .icon-white {
+  color: white;
+  font-size: 23px !important;
+}
+
+.text {
+  color: #e7e7e7;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+.adminButton:hover .text {
+  color: white;
+  font-size: 13px;
+}
+
+.adminButton {
+  padding: 0;
+}
+
+.adminMenuText {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+.adminIcon {
+  font-size: 20px !important;
+}
+h1{
+  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin-bottom: 0;
+  text-align: center;
+}

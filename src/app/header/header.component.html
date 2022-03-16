@@ -1,0 +1,18 @@
+<mat-toolbar class="navbar">
+
+  <span class="example-spacer"></span>
+  <button mat-button [matMenuTriggerFor]="menu" class="adminButton">
+    <mat-icon class="icon-white">person</mat-icon>
+    <span class="text">Admin</span>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon class="adminIcon">edit</mat-icon>
+      <span class="adminMenuText">Perfil</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="adminIcon">logout</mat-icon>
+      <span class="adminMenuText">Cerrar sesión</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
