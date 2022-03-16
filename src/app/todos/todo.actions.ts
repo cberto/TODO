@@ -9,3 +9,8 @@ export const editTodo = createAction('[TODO] Edit TODO', props<{ id: number, tex
 
 
 export const deleteTodo = createAction('[TODO] Delete TODO', props<{ id: number }>());
+
+
+export const toggleAll = createAction('[TODO] ToggleAll TODO', props<{ completed: boolean }>());
+
+export const clearTodo = createAction('[TODO] clearTodo TODO');

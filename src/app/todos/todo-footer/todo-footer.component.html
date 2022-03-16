@@ -1,18 +1,16 @@
 <footer class="footer">
 
-  <span class="todo-count"><strong>0</strong> item left</span>
+  <span class="todo-count"><strong>{{pendingTodo }}</strong> item left</span>
 
   <ul class="filters">
-    <li>
-      <a class="selected" href="#/">All</a>
+
+    <li *ngFor="let filter of filters" (click)="changeFilter(filter)">
+      <!--class="selected"-->
+      <a href="#/" [class.selected]="filter === filtroActual">{{filter | titlecase}}</a>
     </li>
-    <li>
-      <a href="#/active">Active</a>
-    </li>
-    <li>
-      <a href="#/completed">Completed</a>
-    </li>
+
+
   </ul>
 
-  <button class="clear-completed">Clear completed</button>
+  <button class="clear-completed" (click)="clearTodoCompleted()">Clear completed</button>
 </footer>
